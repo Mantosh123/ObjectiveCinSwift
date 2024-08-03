@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var status: UILabel!
+    
     let obj = ObjectiveCViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        obj.getVlaueFromObjectiveC()
+        let returnValue = obj.getValueFromObjectiveC()
+        
+        status.text = returnValue
     }
 }
 

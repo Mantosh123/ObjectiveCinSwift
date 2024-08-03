@@ -17,8 +17,9 @@
     [super viewDidLoad];
 }
 
--(void) getVlaueFromObjectiveC {
-    NSLog(@"I am from ObjetiveC class ");
+- (NSString *) getValueFromObjectiveC  {
+    NSLog(@"I am from ObjetiveC class ");    
+    return @"I am from ObjetiveC class ";
 }
 
 
